@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_200"
+    android:padding="12dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Tiêu đề -->
+        <TextView
+            android:id="@+id/tv_add_product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FAF6F6"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:text="Thêm sản phẩm mới"
+            android:textAlignment="center"
+            android:textColor="#121211"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- Nhập tên sản phẩm -->
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="12dp"
+            android:hint="Tên sản phẩm"
+            android:inputType="textPersonName" />
+
+        <!-- Nhập mô tả -->
+        <EditText
+            android:id="@+id/et_description"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="12dp"
+            android:hint="Mô tả sản phẩm"
+            android:inputType="textMultiLine" />
+
+        <!-- Nhập giá -->
+        <EditText
+            android:id="@+id/et_price"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="12dp"
+            android:hint="Giá sản phẩm"
+            android:inputType="numberDecimal" />
+
+        <!-- Nhập năm sản xuất -->
+        <EditText
+            android:id="@+id/et_year"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="12dp"
+            android:hint="Năm sản xuất"
+            android:inputType="number" />
+
+        <!-- Nhập model -->
+        <EditText
+            android:id="@+id/et_model"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="12dp"
+            android:hint="Model"
+            android:inputType="text" />
+
+        <!-- Button thêm sản phẩm -->
+        <Button
+            android:id="@+id/btn_add_product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="#A9F269"
+            android:text="Thêm sản phẩm"
+            android:textColor="#FFFFFF" />
+
+        <!-- Chỗ hiện lỗi -->
+        <TextView
+            android:id="@+id/tv_invalids"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Invalids : "
+            android:textColor="#FB0505"
+            android:visibility="gone" />
+
+    </LinearLayout>
+</ScrollView>

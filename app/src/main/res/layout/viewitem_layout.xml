@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="12dp"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <!-- Avatar -->
+
+    <ImageView
+        android:id="@+id/iv_avatar"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="8dp"
+        android:src="@android:mipmap/sym_def_app_icon"
+        tools:src="@tools:sample/backgrounds/scenic" />
+
+    <!-- Thông tin liên hệ -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="97dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <!-- Tên liên hệ -->
+        <TextView
+            android:id="@+id/tv_add_product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên xe"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- Số điện thoại -->
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mô tả"
+            android:textSize="14sp" />
+
+        <!-- Email -->
+
+        <!-- Địa chỉ -->
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giá"
+            android:textColor="#F40606"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <!-- Icon gọi điện -->
+
+    <!-- Icon nhắn tin -->
+
+</LinearLayout>
